@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unece.Data", "Unece.Data\Unece.Data.csproj", "{048C0643-01B9-4CA7-8561-0AEC92D009FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unece.Msts", "Unece.Msts\Unece.Msts.csproj", "{61639746-8DAC-4D6D-8BBC-648A37BC8B76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unece.Mro", "Unece.Mro\Unece.Mro.csproj", "{D004BEB8-5947-4444-8BBF-98693061BC41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{048C0643-01B9-4CA7-8561-0AEC92D009FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048C0643-01B9-4CA7-8561-0AEC92D009FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048C0643-01B9-4CA7-8561-0AEC92D009FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048C0643-01B9-4CA7-8561-0AEC92D009FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61639746-8DAC-4D6D-8BBC-648A37BC8B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61639746-8DAC-4D6D-8BBC-648A37BC8B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61639746-8DAC-4D6D-8BBC-648A37BC8B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61639746-8DAC-4D6D-8BBC-648A37BC8B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D004BEB8-5947-4444-8BBF-98693061BC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D004BEB8-5947-4444-8BBF-98693061BC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D004BEB8-5947-4444-8BBF-98693061BC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D004BEB8-5947-4444-8BBF-98693061BC41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD64D235-C771-4DD1-8449-3D0A183CBDD2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+﻿@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Hosting
+@using System.Security.Claims;
+@inject IWebHostEnvironment environment
+@{
+    var claimsIdentity = User.Identity as ClaimsIdentity;
+
+}
+
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="~/assets/images/favicon-32x32.png" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="~/assets/css/app.css" rel="stylesheet">
+    <link href="~/assets/css/icons.css" rel="stylesheet">
+    <!-- Theme Style CSS -->
+    <link rel="stylesheet" href="~/assets/css/dark-theme.css" />
+    <link rel="stylesheet" href="~/assets/css/semi-dark.css" />
+    <link rel="stylesheet" href="~/assets/css/header-colors.css" />
+    <title>@ViewData["Title"]</title>
+    @if (IsSectionDefined("PageHeader"))
+    {
+        @RenderSection("PageHeader")
+        ;
+
+    }
+
+</head>
+<body class="bg-login">
+    <!--wrapper-->
+    <div class="wrapper">
+        <div class="d-flex align-items-center justify-content-center my-5 my-lg-0">
+            <div class="container">
+                @RenderBody()
+                <!--end row-->
+            </div>
+        </div>
+    </div>
+    <!--end wrapper-->
+    <!-- Bootstrap JS -->
+    <script src="~/assets/js/bootstrap.bundle.min.js"></script>
+    <!--plugins-->
+    <script src="~/assets/js/jquery.min.js"></script>
+   
+    <!--Password show & hide js -->
+ 
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+

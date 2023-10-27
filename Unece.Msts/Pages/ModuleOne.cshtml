@@ -1,0 +1,65 @@
+﻿@page
+@model Unece.Msts.Pages.ModuleOneModel
+@{
+}
+<div class="card">
+    <h4 class="card-header">Module One Data</h4>
+    <div class="card-body" id="events-list">
+        <div class="row m-0">
+            <div class="col-md-12 text-right">
+                <button class="btn btn-success mb-3" id="add_ModuleOneData"><i class="fa fa-plus mr-2"></i>Module One Data</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <table class="table table-bordered" width="100%" id="Dttbl_moduleOneData">
+                    <thead>
+                        <tr>
+                            <th hidden></th>
+                            <th>Field One</th>
+                            <th>Field Two</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@* Add Data Modal*@
+<div class="modal fade" tabindex="-1" role="dialog" id="module-One-data-modal" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fa fa-gear mr-2" aria-hidden="true"></i>Manage Key Details</h5>
+                <button type="button" class="close"  data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="frm_add_key">
+                    <input hidden id="ModuleOne_Id" name="ModuleOne.Id" />
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Field One</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="ModuleOne_FieldOne" name="ModuleOne.FieldOne">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Field Two</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="ModuleOne_FieldTwo" name="ModuleOne.FieldTwo">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div asp-validation-summary="All" id="csKeyValidationSummary"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <button type="button" class="btn btn-primary" id="btn_save_cs_key">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AntiForgeryToken()
